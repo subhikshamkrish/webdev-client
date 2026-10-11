@@ -74,6 +74,8 @@ export default async function AssignmentEditor({
           </tr>
         </tbody>
       </table>
+      <label htmlFor="wd-ai-editor-notes">Sample notes</label>
+      <textarea id="wd-ai-editor-notes" className="w-full rounded border border-neutral-300 px-3 py-2" rows={3} />
       <hr />
       <Link id="wd-cancel" href={`/courses/${cid}/assignments`}>Cancel</Link>{" "}
       <Link id="wd-save" href={`/courses/${cid}/assignments`}>Save</Link>

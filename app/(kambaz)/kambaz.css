@@ -1,0 +1,147 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* System sans-serif — Tailwind utilities alone
+   do not set the body font */
+#wd-kambaz {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif;
+  color: #212529;
+  line-height: 1.5;
+}
+#wd-kambaz,
+#wd-kambaz * {
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .wd-main-content-offset {
+    margin-left: 120px;
+  }
+}
+.list-group.wd {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.list-group.wd > .list-group-item {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  text-decoration: none;
+  border: 0;
+  border-left: 3px solid transparent;
+  color: #dc2626;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.list-group.wd > .list-group-item.active {
+  color: black;
+  background-color: white;
+  border-left: 3px solid black !important;
+  font-weight: 600;
+}
+#wd-kambaz { background: white; min-height: 100vh; }
+#wd-kambaz h1 { font-size: 2rem; font-weight: 500; }
+#wd-kambaz h2 { font-size: 1.5rem; font-weight: 500; }
+#wd-kambaz hr { border: 0; border-top: 1px solid #d4d4d4; margin: 1rem 0; }
+#wd-kambaz button, #wd-kambaz select { cursor: pointer; font-family: inherit; }
+
+/* Account forms and the assignment editor are the chapter's independent styling exercises. */
+#wd-kambaz-account :is(#wd-signin-screen, #wd-signup-screen, #wd-profile-screen) {
+  max-width: 384px;
+}
+#wd-kambaz-account :is(#wd-signin-screen, #wd-signup-screen, #wd-profile-screen) > br {
+  display: none;
+}
+#wd-kambaz-account :is(input, select) {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font: inherit;
+  background: white;
+}
+#wd-kambaz-account :is(#wd-signin-screen, #wd-signup-screen, #wd-profile-screen) > a {
+  display: block;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+#wd-kambaz-account :is(#wd-signin-btn, #wd-signup-screen > a:first-of-type, #wd-profile-screen > a) {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#wd-assignments-editor {
+  max-width: 850px;
+}
+#wd-assignments-editor :is(input:not([type="checkbox"]), select, textarea) {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font: inherit;
+  background: white;
+}
+#wd-assignments-editor > label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+#wd-assignments-editor textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+#wd-assignments-editor table {
+  width: 100%;
+  border-spacing: 12px;
+}
+#wd-assignments-editor td:first-child {
+  width: 180px;
+  padding-top: 8px;
+}
+#wd-assignments-editor td:nth-child(2) {
+  max-width: 550px;
+}
+#wd-assignments-editor input[type="checkbox"] {
+  margin: 8px 8px 8px 0;
+}
+#wd-assignments-editor :is(#wd-cancel, #wd-save) {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #212529;
+  text-decoration: none;
+}
+#wd-assignments-editor #wd-save {
+  border-color: #dc2626;
+  background: #dc2626;
+  color: white;
+}
+@media (max-width: 639px) {
+  #wd-assignments-editor table, #wd-assignments-editor tbody, #wd-assignments-editor tr, #wd-assignments-editor td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #wd-assignments-editor td:first-child {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
