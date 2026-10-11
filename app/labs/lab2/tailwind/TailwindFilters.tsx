@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element -- Native images demonstrate CSS sizing and filters. */
+/* eslint-disable @next/next/no-img-element */
 export default function TailwindFilters() {
-  // reactjs.jpg is used here so the lab runs out of the box.
   const src = "/images/reactjs.jpg";
   return (
     <div>

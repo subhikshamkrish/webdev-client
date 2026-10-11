@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element -- Native images demonstrate CSS floats. */
+/* eslint-disable @next/next/no-img-element */
 const STARSHIP =
   "https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg";
 const LOREM =

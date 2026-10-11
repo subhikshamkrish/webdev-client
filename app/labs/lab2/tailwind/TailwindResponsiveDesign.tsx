@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element -- Native images demonstrate CSS sizing and filters. */
+/* eslint-disable @next/next/no-img-element */
 export default function TailwindResponsiveDesign() {
   return (
     <div className="font-sans">

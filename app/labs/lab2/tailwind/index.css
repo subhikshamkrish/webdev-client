@@ -1,6 +1,5 @@
 @import "./utilities.css";
 
-/* Local base styles leave the other labs with their browser defaults. */
 #wd-tailwind, #wd-tailwind * { box-sizing: border-box; border-style: solid; border-width: 0; }
 #wd-tailwind { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
 #wd-tailwind hr { border-top: 1px solid #d4d4d4; }

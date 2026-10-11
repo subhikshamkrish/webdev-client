@@ -22,7 +22,6 @@
     background-color: yellow;
     color: black;
   }
-  /* Same specificity as the default highlight — must clear it here */
   .wd-media-queries-demo li.wd-mq-rule-default {
     opacity: 0.55;
     font-weight: normal;

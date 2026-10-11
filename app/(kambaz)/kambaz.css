@@ -1,8 +1,6 @@
 @import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/utilities" layer(utilities);
 
-/* System sans-serif — Tailwind utilities alone
-   do not set the body font */
 #wd-kambaz {
   font-family:
     system-ui,
@@ -55,7 +53,6 @@
 #wd-kambaz hr { border: 0; border-top: 1px solid #d4d4d4; margin: 1rem 0; }
 #wd-kambaz button, #wd-kambaz select { cursor: pointer; font-family: inherit; }
 
-/* Account forms and the assignment editor are the chapter's independent styling exercises. */
 #wd-kambaz-account :is(#wd-signin-screen, #wd-signup-screen, #wd-profile-screen) {
   max-width: 384px;
 }
