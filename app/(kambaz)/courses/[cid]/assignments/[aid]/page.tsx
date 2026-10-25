@@ -1,24 +1,29 @@
 import Link from "next/link";
+import * as db from "../../../../database";
+import { notFound } from "next/navigation";
 
 export default async function AssignmentEditor({
   params,
 }: {
   params: Promise<{ cid: string; aid: string }>;
 }) {
-  const { cid } = await params;
+  const { cid, aid } = await params;
+  const assignment = db.assignments.find((assignment) => assignment.course === cid && assignment._id === aid);
+  if (!assignment) notFound();
   return (
     <div id="wd-assignments-editor">
+      <p>Assignment id: {aid}</p>
       <label htmlFor="wd-name">Assignment Name</label><br />
-      <input id="wd-name" defaultValue="A1 - ENV + HTML" /><br /><br />
+      <input id="wd-name" defaultValue={assignment?.title ?? ""} /><br /><br />
       <label htmlFor="wd-description">Description</label><br />
       <textarea id="wd-description" cols={50} rows={5}
-        defaultValue="The assignment is available online. Submit a link to the landing page of your Web application running on Vercel." />
+        defaultValue={assignment?.description ?? ""} />
       <br />
       <table>
         <tbody>
           <tr>
             <td align="right" valign="top"><label htmlFor="wd-points">Points</label></td>
-            <td><input id="wd-points" type="number" min={0} defaultValue={100} /></td>
+            <td><input id="wd-points" type="number" min={0} defaultValue={assignment?.points ?? 0} /></td>
           </tr>
           <tr>
             <td align="right" valign="top"><label htmlFor="wd-group">Assignment Group</label></td>
@@ -65,11 +70,11 @@ export default async function AssignmentEditor({
               <label htmlFor="wd-assign-to">Assign to</label><br />
               <input id="wd-assign-to" defaultValue="Everyone" /><br />
               <label htmlFor="wd-due-date">Due</label><br />
-              <input id="wd-due-date" type="datetime-local" defaultValue="2026-05-13T23:59" /><br />
+              <input id="wd-due-date" type="datetime-local" defaultValue={`${assignment?.due ?? ""}T23:59`} /><br />
               <label htmlFor="wd-available-from">Available from</label><br />
-              <input id="wd-available-from" type="datetime-local" defaultValue="2026-05-06T00:00" /><br />
+              <input id="wd-available-from" type="datetime-local" defaultValue={`${assignment?.available ?? ""}T00:00`} /><br />
               <label htmlFor="wd-available-until">Until</label><br />
-              <input id="wd-available-until" type="datetime-local" defaultValue="2026-05-13T23:59" />
+              <input id="wd-available-until" type="datetime-local" defaultValue={`${assignment?.due ?? ""}T23:59`} />
             </td>
           </tr>
         </tbody>

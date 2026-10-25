@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Rocket Propulsion",
+    "number": "RS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "credits": 4,
+    "description": "This course provides an in-depth study of the fundamentals of rocket propulsion, including thermodynamics of the combustion chamber and nozzle. Students analyze solid, liquid, and hybrid rocket motors and apply propulsion theory to engine performance.",
+    "image": "/images/reactjs.jpg",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "RS102",
+    "name": "Aerodynamics",
+    "number": "RS4560",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "credits": 3,
+    "description": "This course explores the principles of aerodynamics and how airflow interacts with wings, airfoils, and other flying bodies. Students study lift, drag, compressible flow, and the aerodynamic considerations used in aircraft and spacecraft design.",
+    "image": "/images/nodejs.jpg",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "RS103",
+    "name": "Spacecraft Design and Mission Planning",
+    "number": "RS4570",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "credits": 4,
+    "description": "This course covers the principles of spacecraft design, including structures, propulsion, thermal control, and power systems. Students apply systems engineering methods to mission design, orbital mechanics, and payload integration for current and future space missions.",
+    "image": "/images/mongodb.jpg",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "1234",
+    "name": "CS1234 React JS",
+    "description": "Full Stack software developer",
+    "image": "/images/reactjs.jpg",
+    "number": "1234",
+    "credits": 4,
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "2345",
+    "name": "CS2345 Node JS",
+    "description": "Server side JavaScript",
+    "image": "/images/nodejs.jpg",
+    "number": "2345",
+    "credits": 4,
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "3456",
+    "name": "CS3456 MongoDB",
+    "description": "NoSQL Databases",
+    "image": "/images/mongodb.jpg",
+    "number": "3456",
+    "credits": 4,
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "CS9999",
+    "name": "CS9999 Sample Course",
+    "description": "Assistant-generated sample \u2014 not my course",
+    "image": "/images/reactjs.jpg",
+    "number": "CS9999",
+    "credits": 4,
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "term": "Spring 2023"
+  },
+  {
+    "_id": "RS104",
+    "name": "Organic Chemistry",
+    "description": "Study carbon compounds, their structures, reactions, and synthesis.",
+    "image": "/images/reactjs.jpg",
+    "number": "RS104",
+    "credits": 4,
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "department": "D123",
+    "term": "Spring 2023"
+  }
+]
